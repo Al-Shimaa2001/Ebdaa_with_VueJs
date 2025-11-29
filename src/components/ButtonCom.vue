@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button class="bg-primary border rounded-xl p-2 text-primary">
+    <button
+      class="bg-primary border rounded-xl p-2 text-secondary text-3xl font-bold w-[222px] h-[76px]"
+    >
       {{ btnTitle }}
     </button>
   </div>

@@ -3,3 +3,7 @@
 html {
   direction: rtl;
 }
+@theme {
+  --color-primary: #004956;
+  --color-secondary: #ffffff;
+}
