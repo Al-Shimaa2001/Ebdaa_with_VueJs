@@ -1,8 +1,12 @@
 <template>
   <div>
     <header>
-      <nav class="grid grid-cols-5 gap-6 items-center justify-center p-1.5">
-        <div><img src="/src/assets/images/Logo.png" alt="logo" class="w-[138px] h-[40px]" /></div>
+      <nav class="grid grid-cols-5 gap-6 items-center justify-center pt-3 pb-8">
+        <div>
+          <routerLink to="/">
+            <img src="/src/assets/images/Logo.png" alt="logo" class="w-[138px] h-[40px] mx-7" />
+          </routerLink>
+        </div>
         <div class="flex items-center gap-2">
           <Icon
             icon="iconamoon:menu-burger-horizontal-duotone"
