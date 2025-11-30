@@ -1,0 +1,115 @@
+<template>
+  <main>
+    <header class="p-4 text-center">
+      <h1 class="font-bold text-4xl text-primary">Login</h1>
+      <router-link to="/signup" class="text-gray-500 hover:font-semibold hover:underline"
+        >sign in to continue</router-link
+      >
+    </header>
+    <form
+      @submit.prevent="handelSubmit"
+      class="place-items-center md:m-4 md:p-4 grid gap-2 w-80 md:w-100"
+    >
+      <div class="flex flex-col gap-1 text-primary">
+        <label for="email" class="font-medium"> Email: </label>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="hello@reallygreatsite.com"
+          required
+          v-model="email"
+          class="border border-primary p-2 rounded-lg md:w-100"
+        />
+        <span :class="emailError ? 'inline-block text-red-500 ' : 'hidden'">
+          please enter email</span
+        >
+      </div>
+      <div class="flex flex-col gap-1 text-primary">
+        <label for="password" class="font-medium"> Password : </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="******"
+          required
+          class="border border-primary p-2 rounded-lg md:w-100"
+          v-model="password"
+        />
+        <span :class="passError ? 'inline-block text-2xl m-2 text-red-600' : 'hidden'">
+          please enter password</span
+        >
+        <router-link to="/forgetPass" class="hover:underline hover:font-semibold">
+          Forget Password ?</router-link
+        >
+      </div>
+      <AppButton @click="handelSubmit">
+        <router-link class="goto" :to="goto ? '/' : '/login'"> Login </router-link>
+      </AppButton>
+    </form>
+  </main>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import AppButton from '../AppButton.vue'
+
+const goto = ref(false)
+const emailError = ref(false)
+const passError = ref(false)
+const email = ref('')
+const password = ref('')
+
+if (localStorage.getItem('emailValue') || localStorage.getItem('passValue')) {
+  // email.value = JSON.parse(localStorage.getItem('emailValue'))
+  // password.value = JSON.parse(localStorage.getItem('passValue'))
+  goto.value = !goto.value
+}
+function handelSubmit() {
+  if (email.value && password.value) {
+    goto.value = !goto.value
+    saveToLocalStorage()
+    email.value = ''
+    password.value = ''
+    return
+  }
+  if (!email.value && !password.value) {
+    handelData()
+    return
+  }
+}
+
+function saveToLocalStorage() {
+  localStorage.setItem('emailValue', JSON.stringify(email.value))
+  localStorage.setItem('passValue', JSON.stringify(password.value))
+}
+function handelData() {
+  if (!email.value) {
+    emailError.value = true
+    setTimeout(() => {
+      emailError.value = !emailError.value
+    }, 3000)
+    return
+  }
+  if (!password.value) {
+    passError.value = true
+    setTimeout(() => {
+      passError.value = !passError.value
+    }, 3000)
+    return
+  }
+}
+</script>
+
+<style scoped>
+main {
+  background-image: url('/src/assets/images/loginBackground.png');
+  background: cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  direction: ltr;
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+</style>

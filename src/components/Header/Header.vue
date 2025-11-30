@@ -9,7 +9,7 @@
       >
         جاهز تعيش تجربة تقنية <span class="text-primary">مختلفة</span> أحدث الأجهزة بانتظارك!
       </p>
-      <ButtonCom btn-title="تسوق الان" class="md:col-start-2 flex justify-center items-center" />
+      <AppButton class="md:col-start-2 flex justify-center items-center"> تسوق الان </AppButton>
     </HeaderBg>
   </div>
 </template>
@@ -17,7 +17,7 @@
 <script setup>
 import MainNav from '../LandingPage/NavBar/MainNav.vue'
 import HeaderBg from './HeaderBg.vue'
-import ButtonCom from '../ButtonCom.vue'
+import AppButton from '../App/AppButton.vue'
 </script>
 
 <style scoped></style>
