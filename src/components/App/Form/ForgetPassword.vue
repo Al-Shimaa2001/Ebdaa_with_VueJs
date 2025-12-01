@@ -12,6 +12,7 @@
           placeholder="enter new password"
           v-model="newPass"
           class="border rounded md:p-2 outline-0 md:w-100"
+          required
         />
       </div>
       <div>
@@ -21,6 +22,7 @@
           placeholder="enter password again"
           v-model="confirmPass"
           class="border rounded md:p-2 outline-0 md:w-100"
+          required
         />
       </div>
       <div>

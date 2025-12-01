@@ -1,11 +1,10 @@
 <template>
   <main>
-    <header class="p-4 text-center">
-      <h1 class="font-bold text-4xl text-primary">Login</h1>
+    <FormHeader title="Login">
       <router-link to="/signup" class="text-gray-500 hover:font-semibold hover:underline"
         >sign in to continue</router-link
       >
-    </header>
+    </FormHeader>
     <form
       @submit.prevent="handelSubmit"
       class="place-items-center md:m-4 md:p-4 grid gap-2 w-80 md:w-100"
@@ -43,8 +42,8 @@
           Forget Password ?</router-link
         >
       </div>
-      <AppButton @click="handelSubmit">
-        <router-link class="goto" :to="goto ? '/' : '/login'"> Login </router-link>
+      <AppButton>
+        <router-link @click="handelSubmit"> Login </router-link>
       </AppButton>
     </form>
   </main>
@@ -53,22 +52,23 @@
 <script setup>
 import { ref } from 'vue'
 import AppButton from '../AppButton.vue'
+import FormHeader from './FormHeader.vue'
+import { useRouter } from 'vue-router'
 
-const goto = ref(false)
+const router = useRouter()
 const emailError = ref(false)
 const passError = ref(false)
 const email = ref('')
 const password = ref('')
 
 if (localStorage.getItem('emailValue') || localStorage.getItem('passValue')) {
-  // email.value = JSON.parse(localStorage.getItem('emailValue'))
-  // password.value = JSON.parse(localStorage.getItem('passValue'))
-  goto.value = !goto.value
+  email.value = JSON.parse(localStorage.getItem('emailValue'))
+  password.value = JSON.parse(localStorage.getItem('passValue'))
 }
 function handelSubmit() {
   if (email.value && password.value) {
-    goto.value = !goto.value
     saveToLocalStorage()
+    router.push('/')
     email.value = ''
     password.value = ''
     return
