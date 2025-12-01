@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="font-bold text-4xl text-primary text-center mb-30">Forget Password</h1>
+    <FormHeader title="Forget Password"></FormHeader>
     <form
       @submit.prevent="handleForgetPass"
       class="flex flex-col justify-center items-center text-left gap-4.5"
@@ -40,6 +40,7 @@
 import { ref } from 'vue'
 import AppButton from '../AppButton.vue'
 import { useRouter } from 'vue-router'
+import FormHeader from './FormHeader.vue'
 
 const router = useRouter()
 const newPass = ref('')
