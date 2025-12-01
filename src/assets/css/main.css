@@ -6,6 +6,7 @@ html {
 @theme {
   --color-primary: #004956;
   --color-secondary: #ffffff;
+  --color-text: #001a1e;
 }
 .formMain {
   background-image: url('/src/assets/images/loginBackground.png');
