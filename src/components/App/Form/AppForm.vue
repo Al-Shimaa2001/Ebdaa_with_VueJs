@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="formMain">
     <FormHeader title="Login">
       <router-link to="/signup" class="text-gray-500 hover:font-semibold hover:underline"
         >sign in to continue</router-link
@@ -101,15 +101,4 @@ function handelData() {
 }
 </script>
 
-<style scoped>
-main {
-  background-image: url('/src/assets/images/loginBackground.png');
-  background: cover no-repeat;
-  height: 100vh;
-  width: 100vw;
-  direction: ltr;
-  display: grid;
-  place-content: center;
-  align-items: center;
-}
-</style>
+<style scoped></style>

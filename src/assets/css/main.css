@@ -7,3 +7,13 @@ html {
   --color-primary: #004956;
   --color-secondary: #ffffff;
 }
+.formMain {
+  background-image: url('/src/assets/images/loginBackground.png');
+  background: cover no-repeat;
+  height: 100vh;
+  width: 100vw;
+  direction: ltr;
+  display: grid;
+  place-content: center;
+  align-items: center;
+}

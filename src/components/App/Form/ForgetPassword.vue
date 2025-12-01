@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="formMain">
     <FormHeader title="Forget Password"></FormHeader>
     <form
       @submit.prevent="handleForgetPass"
@@ -78,15 +78,4 @@ function handleCheck() {
 }
 </script>
 
-<style scoped>
-main {
-  background-image: url('/src/assets/images/loginBackground.png');
-  background: cover no-repeat;
-  height: 100vh;
-  width: 100vw;
-  direction: ltr;
-  display: grid;
-  place-content: center;
-  align-items: center;
-}
-</style>
+<style scoped></style>

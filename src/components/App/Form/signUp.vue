@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="formMain">
     <FormHeader title="Sign Up"></FormHeader>
   </main>
 </template>
