@@ -2,15 +2,14 @@
   <div>
     <Header />
     <AboutSection />
-    <CartSection />
+    <ElectronicsSection />
   </div>
 </template>
 
-import CartSection from '../App/Carts/CartSection.vue';
 <script setup>
 import Header from '../Header/Header.vue'
 import AboutSection from './AboutSection.vue'
-import CartSection from './CartSection.vue'
+import ElectronicsSection from './ElectronicsSection.vue'
 </script>
 
 <style scoped></style>
