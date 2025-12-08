@@ -1,6 +1,12 @@
 <template>
   <div class="relative" @dblclick="dblclick = !dblclick">
-    <img :src="src" alt="electronics" width="280" height="286" />
+    <img
+      :src="src"
+      alt="electronics"
+      width="280"
+      height="286"
+      title="double click to add to favorite"
+    />
     <Icon
       class="absolute text-2xl top-3 left-1.5 cursor-pointer"
       :class="{ ' text-red-600 ': dblclick }"
