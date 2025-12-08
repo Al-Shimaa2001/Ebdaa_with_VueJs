@@ -1,7 +1,7 @@
 <template>
   <main class="my-25 mx-20">
     <CartSection :cartTitle="cartTitle">
-      <section class="flex justify-center items-center gap-4">
+      <section class="flex flex-col md:flex-row justify-center items-center gap-4">
         <CartBody
           :srcImage="cart.cartImage"
           :title="cart.title"
@@ -17,8 +17,10 @@
 <script setup>
 import CartSection from '../App/Carts/CartSection.vue'
 import CartBody from '../App/Carts/CartBody.vue'
-const cartTitle = 'اجهزه الكترونيه'
 import { ref } from 'vue'
+const hoverAdd = ref(true)
+
+const cartTitle = 'اجهزه الكترونيه'
 const carts = ref([
   {
     cartId: 1,

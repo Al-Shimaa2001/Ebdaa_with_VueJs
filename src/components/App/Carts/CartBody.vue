@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-2xl w-72 h-11/12 p-3 rounded-2xl">
+  <div class="relative shadow-2xl md:w-72 h-11/12 p-3 rounded-2xl">
     <CartImage :src="srcImage" />
     <CartContent :title="title" :details="details" />
     <CartFooter salary="49.49 ر.س" />
@@ -13,7 +13,7 @@ import CartImage from './CartImage.vue'
 
 defineProps({
   srcImage: { type: String },
-  title: { type: String, required: true },
+  title: { type: String },
   details: { type: String },
   carts: { type: Array },
 })

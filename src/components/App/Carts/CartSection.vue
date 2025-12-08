@@ -21,7 +21,7 @@ import { Icon } from '@iconify/vue'
 defineProps({
   cartTitle: { type: String, required: true },
   cartImage: { type: String },
-  title: { type: String, required: true },
+  title: { type: String },
   details: { type: String },
 })
 </script>

@@ -3,7 +3,7 @@
     <header>
       <h1 class="text-text text-4xl font-bold text-center my-10">تسوق عبر الاقسام</h1>
     </header>
-    <section class="flex justify-center items-center gap-8">
+    <section class="flex flex-col md:flex-row justify-center items-center gap-8">
       <div v-for="dept in departments" :key="dept.id">
         <img :src="dept.Image" :alt="dept.title" />
         <h3 class="text-text text-3xl font-bold text-center my-8">{{ dept.title }}</h3>
