@@ -7,6 +7,7 @@ html {
   --color-primary: #004956;
   --color-secondary: #ffffff;
   --color-text: #001a1e;
+  --color-description: #003741;
 }
 .formMain {
   background-image: url('/src/assets/images/loginBackground.png');
