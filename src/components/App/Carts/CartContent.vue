@@ -2,7 +2,7 @@
   <div>
     <h1 class="">{{ title }}</h1>
     <article>
-      <p class="font-bold text-2xl text-cart-des my-6">{{ details }}</p>
+      <p class="font-bold md:text-2xl text-cart-des my-6">{{ details }}</p>
     </article>
   </div>
 </template>
