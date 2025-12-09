@@ -8,6 +8,7 @@ html {
   --color-secondary: #ffffff;
   --color-text: #001a1e;
   --color-description: #003741;
+  --color-cart-des: #001a1e;
 }
 .formMain {
   background-image: url('/src/assets/images/loginBackground.png');
