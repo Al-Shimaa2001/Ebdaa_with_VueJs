@@ -6,7 +6,7 @@
           <routerLink to="/">
             <img src="/src/assets/images/Logo.png" alt="logo" class="w-[138px] h-10 mx-7" />
           </routerLink>
-          <div class="flex items-center gap-x-2">
+          <div class="hidden lg:flex items-center gap-x-2">
             <Icon
               icon="iconamoon:menu-burger-horizontal-duotone"
               width="24"

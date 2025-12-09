@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col lg:flex-row-reverse justify-evenly items-center my-25 p-10">
+  <main class="flex flex-col lg:flex-row-reverse lg:justify-evenly items-center my-25 p-10">
     <div class="hidden md:flex w-[484px] h-[484px]">
       <img src="/src/assets/images/erbods_headphone.png" alt="erbods_headphone" />
     </div>
@@ -22,6 +22,5 @@ import AppButton from '../App/AppButton.vue'
 main {
   background-image: url('/src/assets/images/loginBackground.png');
   background: cover no-repeat;
-  height: 100vh;
 }
 </style>
