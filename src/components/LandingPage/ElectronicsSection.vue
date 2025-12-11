@@ -43,6 +43,13 @@ const carts = ref([
     title: ' محولات الطاقة لفون',
     details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
   },
+  {
+    cartId: 4,
+    cartTitle: 'اجهزه الكترونيه',
+    cartImage: '/src/assets/images/RC_Dron.png',
+    title: ' محولات الطاقة لفون',
+    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
+  },
 ])
 </script>
 

@@ -43,6 +43,13 @@ const carts = ref([
     title: ' محولات الطاقة لفون',
     details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
   },
+  {
+    cartId: 4,
+    cartTitle: 'سماعات ',
+    cartImage: '/src/assets/images/headphone.png',
+    title: ' محولات الطاقة لفون',
+    details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
+  },
 ])
 </script>
 
