@@ -6,6 +6,7 @@
     <YourWorldSection />
     <AirBodsSection />
     <BatteryCards />
+    <AppFooter />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import AirBodsSection from './AirBodsSection.vue'
 import BatteryCards from './BatteryCards.vue'
 import ElectronicsSection from './ElectronicsSection.vue'
 import YourWorldSection from './yourWorldSection.vue'
+import AppFooter from '../App/Footer.vue'
 </script>
 
 <style scoped></style>
