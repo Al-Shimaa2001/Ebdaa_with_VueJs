@@ -1,6 +1,6 @@
 <template>
   <main class="my-25 mx-20">
-    <CartSection :cartTitle="cartTitle">
+    <CartSection>
       <section class="flex flex-col md:flex-row justify-center items-center gap-4">
         <div>
           <img
