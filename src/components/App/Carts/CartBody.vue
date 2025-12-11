@@ -1,14 +1,21 @@
 <template>
-  <div class="relative shadow-2xl md:w-72 h-11/12 p-3 rounded-2xl">
+  <div
+    class="relative shadow-2xl md:w-72 h-11/12 p-3 rounded-2xl"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+  >
     <CartImage :src="srcImage" />
     <CartContent :title="title" :details="details" />
     <CartFooter salary="49.49 ر.س" />
+    <CartHover :hover-cart="hover" />
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import CartContent from './CartContent.vue'
 import CartFooter from './CartFooter.vue'
+import CartHover from './CartHover.vue'
 import CartImage from './CartImage.vue'
 
 defineProps({
@@ -17,6 +24,8 @@ defineProps({
   details: { type: String },
   carts: { type: Array },
 })
+
+const hover = ref(false)
 </script>
 
 <style scoped></style>
