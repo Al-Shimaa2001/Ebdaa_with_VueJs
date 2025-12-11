@@ -19,7 +19,7 @@
 import CartHeader from './CartHeader.vue'
 import { Icon } from '@iconify/vue'
 defineProps({
-  cartTitle: { type: String, required: true },
+  cartTitle: { type: String },
   cartImage: { type: String },
   title: { type: String },
   details: { type: String },
