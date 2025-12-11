@@ -16,9 +16,9 @@
 import { ref } from 'vue'
 
 const departments = ref([
-  { id: '1', Image: '/public/images/electronics.png', title: 'اجهزه الكترونيه' },
-  { id: '2', Image: '/public/images/airPhone.png', title: 'السماعات' },
-  { id: '3', Image: '/public/images/power.png', title: 'الشواحن والبطاريات' },
+  { id: '1', Image: '/images/electronics.png', title: 'اجهزه الكترونيه' },
+  { id: '2', Image: '/images/airPhone.png', title: 'السماعات' },
+  { id: '3', Image: '/images/power.png', title: 'الشواحن والبطاريات' },
 ])
 </script>
 

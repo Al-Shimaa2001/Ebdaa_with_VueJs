@@ -4,7 +4,7 @@
       <section class="flex flex-col flex-wrap md:flex-row justify-center items-center gap-4">
         <div>
           <img
-            src="/public/images/battery-section.png"
+            src="/images/battery-section.png"
             alt="batterySection"
             width="296"
             height="460"
