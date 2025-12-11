@@ -18,7 +18,21 @@
       </div>
     </div>
     <div>
-      <h3>تواصل معنا</h3>
+      <h3 class="mb-4 font-bold text-2xl">تواصل معنا</h3>
+      <div class="flex gap-8">
+        <router-link to="/" class="bg-primary size-10 rounded-sm flex justify-center items-center">
+          <Icon icon="mdi-light:phone" width="28" height="28" style="color: #fff"
+        /></router-link>
+        <router-link to="/" class="bg-primary size-10 rounded-sm flex justify-center items-center"
+          ><Icon icon="lucide:tablet" width="20" height="28" style="color: #fff" />
+        </router-link>
+        <router-link to="/" class="bg-primary size-10 rounded-sm flex justify-center items-center"
+          ><Icon icon="ic:sharp-whatsapp" width="28" height="28" style="color: #fff" />
+        </router-link>
+        <router-link to="/" class="bg-primary size-10 rounded-sm flex justify-center items-center"
+          ><Icon icon="mdi-light:email" width="28" height="20" style="color: #fff" />
+        </router-link>
+      </div>
     </div>
   </footer>
   <div class="bg-[#D9E4E6] py-6 pr-20 text-2xl font-bold">
@@ -29,6 +43,8 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
+import { Icon } from '@iconify/vue'
+
 const dateOfYear = ref(new Date().getFullYear())
 </script>
 
