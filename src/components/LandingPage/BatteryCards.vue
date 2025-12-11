@@ -2,6 +2,15 @@
   <main class="my-25 mx-20">
     <CartSection :cartTitle="cartTitle">
       <section class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <div>
+          <img
+            src="/public/images/battery-section.png"
+            alt="batterySection"
+            width="296"
+            height="460"
+            class="rounded-2xl"
+          />
+        </div>
         <CartBody
           :srcImage="cart.cartImage"
           :title="cart.title"
@@ -22,13 +31,6 @@ const hoverAdd = ref(true)
 
 const cartTitle = 'اجهزه الكترونيه'
 const carts = ref([
-  {
-    cartId: 1,
-    cartTitle: 'اجهزه الكترونيه',
-    cartImage: '/public/images/battery-section.png',
-    title: ' محولات الطاقة لفون',
-    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
-  },
   {
     cartId: 2,
     cartTitle: 'اجهزه الكترونيه',

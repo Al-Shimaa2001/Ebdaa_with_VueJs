@@ -4,7 +4,7 @@
 
 <script setup>
 defineProps({
-  salary: { type: String, required: true },
+  salary: { type: String },
 })
 </script>
 
