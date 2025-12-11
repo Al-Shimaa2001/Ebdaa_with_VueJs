@@ -10,7 +10,7 @@
     <Icon
       class="absolute text-2xl top-3 left-1.5 cursor-pointer"
       :class="{ ' text-red-600 ': addFav }"
-      :icon="addFav ? 'mage:heart-fill' : 'gravity-ui:heart'"
+      :icon="addFav ? 'mage:heart-fill' : 'solar:heart-outline'"
       width="40"
       height="40"
     />
