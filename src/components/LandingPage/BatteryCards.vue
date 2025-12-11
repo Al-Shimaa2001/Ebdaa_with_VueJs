@@ -1,7 +1,7 @@
 <template>
   <main class="my-25 mx-20">
     <CartSection>
-      <section class="flex flex-col md:flex-row justify-center items-center gap-4">
+      <section class="flex flex-col flex-wrap md:flex-row justify-center items-center gap-4">
         <div>
           <img
             src="/public/images/battery-section.png"

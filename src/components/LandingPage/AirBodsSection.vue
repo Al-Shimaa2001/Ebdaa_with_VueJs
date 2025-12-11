@@ -1,7 +1,7 @@
 <template>
   <main class="my-25 mx-20">
     <CartSection :cartTitle="cartTitle">
-      <section class="flex flex-col md:flex-row justify-center items-center gap-4">
+      <section class="flex flex-col flex-wrap md:flex-row justify-center items-center gap-4">
         <CartBody
           :srcImage="cart.cartImage"
           :title="cart.title"
