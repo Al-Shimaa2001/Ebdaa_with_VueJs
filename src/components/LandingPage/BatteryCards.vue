@@ -20,35 +20,35 @@ import CartBody from '../App/Carts/CartBody.vue'
 import { ref } from 'vue'
 const hoverAdd = ref(true)
 
-const cartTitle = 'سماعات'
+const cartTitle = 'اجهزه الكترونيه'
 const carts = ref([
   {
     cartId: 1,
-    cartTitle: ' محولات الطاقة لفون',
-    cartImage: '/public/images/headphone.png',
+    cartTitle: 'اجهزه الكترونيه',
+    cartImage: '/public/images/battery-section.png',
     title: ' محولات الطاقة لفون',
-    details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
+    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
   },
   {
     cartId: 2,
-    cartTitle: 'سماعات',
-    cartImage: '/public/images/headphone.png',
+    cartTitle: 'اجهزه الكترونيه',
+    cartImage: '/public/images/RC_Dron.png',
     title: ' محولات الطاقة لفون',
-    details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
+    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
   },
   {
     cartId: 3,
-    cartTitle: 'سماعات ',
-    cartImage: '/public/images/headphone.png',
+    cartTitle: 'اجهزه الكترونيه',
+    cartImage: '/public/images/RC_Dron.png',
     title: ' محولات الطاقة لفون',
-    details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
+    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
   },
   {
     cartId: 4,
-    cartTitle: 'سماعات ',
-    cartImage: '/public/images/headphone.png',
+    cartTitle: 'اجهزه الكترونيه',
+    cartImage: '/public/images/RC_Dron.png',
     title: ' محولات الطاقة لفون',
-    details: 'سماعة على الاذن بلوتوث لاسلكية P9 مع.... ',
+    details: ' RC Dron HD 4K وضع الكاميرا لطائرة....',
   },
 ])
 </script>

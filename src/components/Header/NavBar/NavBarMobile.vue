@@ -9,7 +9,7 @@ function openNavList() {
   <div class="flex justify-between items-center m-7">
     <div>
       <routerLink to="/">
-        <img src="/src/assets/images/Logo.png" alt="logo" class="w-[138px] h-[40px]" />
+        <img src="/public/images/Logo.png" alt="logo" class="w-[138px] h-[40px]" />
       </routerLink>
     </div>
     <div @click="openNavList">

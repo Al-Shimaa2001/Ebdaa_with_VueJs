@@ -4,7 +4,7 @@
       <nav class="grid grid-cols-5 gap-3 items-center justify-center pt-3 pb-8">
         <div class="flex place-content-center items-center">
           <routerLink to="/">
-            <img src="/src/assets/images/Logo.png" alt="logo" class="w-[138px] h-10 mx-7" />
+            <img src="/public/images/Logo.png" alt="logo" class="w-[138px] h-10 mx-7" />
           </routerLink>
           <div class="hidden lg:flex items-center gap-x-2">
             <Icon

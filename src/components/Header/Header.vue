@@ -2,7 +2,7 @@
   <div>
     <MainNav />
     <HeaderBg
-      bg-image="/src/assets/images/hero.png"
+      bg-image="/public/images/hero.png"
       class="grid grid-cols-1 place-content-center gap-10 h-[338px]"
       ><p
         class="text-color font-bold text-3xl/30 md:text-[56px]/30 text-center md:w-[760px] h-56 md:col-start-2"

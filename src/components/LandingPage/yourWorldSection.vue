@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col lg:flex-row-reverse lg:justify-evenly items-center my-25 p-10">
     <div class="hidden md:flex w-[484px] h-[484px]">
-      <img src="/src/assets/images/erbods_headphone.png" alt="erbods_headphone" />
+      <img src="/public/images/erbods_headphone.png" alt="erbods_headphone" />
     </div>
     <div class="text-center lg:text-right lg:w-[811px]">
       <h3 class="text-text text-3xl md:text-6xl font-bold my-2">غُص في عالمك الخاص!</h3>
@@ -20,7 +20,7 @@ import AppButton from '../App/AppButton.vue'
 
 <style scoped>
 main {
-  background-image: url('/src/assets/images/loginBackground.png');
+  background-image: url('/public/images/loginBackground.png');
   background: cover no-repeat;
 }
 </style>
